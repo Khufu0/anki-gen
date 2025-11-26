@@ -1,0 +1,71 @@
+:root {
+    font-family: Ubuntu, Cantarell, sans-serif;
+    font-size: 1.25em;
+}
+
+.body {
+    margin-inline: auto;
+    max-width: 80%;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    @media (max-width: 912px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.body> :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.name {
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+    color: white;
+}
+
+.sense {
+    background-color: #282c2d;
+    border: 1px solid #64b5f6;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+.pos,
+.examples-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.examples-header {
+    color: #7fffd4;
+}
+
+.id {
+    font-weight: 500;
+    color: #64b5f6;
+}
+
+.defs-list {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+}
+
+.defs-list li {
+    color: #d0d0d0;
+}
+
+.examples {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+    color: aquamarine;
+}

@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+*.apkg
+
+words/
+.env
+x.py
+x.html
+words.txt
